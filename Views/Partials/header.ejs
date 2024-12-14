@@ -1,0 +1,116 @@
+<header>
+    <nav class="w-100">
+      <!-- Top header start -->
+      <div class="bg-[#04091e] h-14 text-white flex justify-between items-center px-4 md:px-20">
+        <!-- Social Links -->
+        <ul class="flex gap-3 text-xs">
+          <li class="hover:text-red-500"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li class="hover:text-red-500"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="hover:text-red-500"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+          <li class="hover:text-red-500"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="hidden md:flex items-center gap-5">
+          <li><a class="hover:text-red-500" href="#">+98012060987</a></li>
+          <li><a class="hover:text-red-500" href="#">example@gmail.com</a></li>
+        </ul>        <!-- Icons for Smaller Screens -->
+        <ul class="flex gap-4 md:hidden">
+          <li><a class="hover:text-red-500" href="#"><i class="fa-solid fa-phone-volume"></i></a></li>
+          <li><a class="hover:text-red-500" href="#"><i class="fa-solid fa-at"></i></a></li>
+        </ul>
+      </div>
+      <!-- Top header end -->
+  
+      <!-- Logo and Banner Section -->
+      <div class="h-auto p-4 bg-white flex items-center justify-center flex-col md:flex-row md:px-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0 mb-4 sm:mb-0 relative ">
+          <img class="h-[80px] w-auto" src="/Images/ds-logo.png" alt="Logo">
+        </div>
+        <!-- Banner Ad -->
+        <div class="w-full md:w-auto lg:ml-[220px]">
+          <img class="w-[728px] h-[90px] md:h-auto object-cover sm:w-full" src="/Images/banner-ad.jpg.webp" alt="Banner Ad">
+        </div>
+      
+        </div>
+       <!-- Navigation Bar -->
+      <div class="flex items-center justify-between h-[50px] mx-auto py-[15px] px-[20px] bg-[#04091e] w-[95%] md:w-[87%]">
+        <!-- Links (hidden on smaller screens) -->
+        <ul class="hidden md:flex gap-8 text-[14px] text-[#fff] font-[400] uppercase my-[20px] mx-[15px] ">
+          <li><a class="hover:text-red-500" href="/">Home</a></li>
+           <li><a class="hover:text-red-500" href="/about">About</a></li>
+         
+      <!-- Dropdown -->
+      <ul class="absolute left-0 top-full hidden group-hover:flex flex-col bg-[#04091e] text-white w-[150px] shadow-lg">
+        <li class="py-2 px-4 hover:bg-red-500 transition-all duration-300"><a href="/blog">All Blogs</a></li>
+        <li class="py-2 px-4 hover:bg-red-500 transition-all duration-300"><a href="/categories">Categories</a></li>
+        <li class="py-2 px-4 hover:bg-red-500 transition-all duration-300"><a href="/popular">Popular</a></li>
+      </ul>
+    </li>
+    <li><a class="hover:text-red-500" href="/contact-us">Contact Us</a></li>
+  </ul>
+
+  <!-- Mobile Menu Icon -->
+  <button id="menuButton" class="md:hidden flex items-center  text-white hover:text-red-500 font-thin text-lg">
+    <i class="fa-solid fa-bars mr-2 text-[20px]"></i> Menu
+  </button>
+
+     <div id="menuDropdown" class="fixed left-0 top-0 w-[100%] h-screen overflow-hidden bg-black bg-opacity-95 z-[998] text-white shadow-lg hidden pt-[18px]">
+  <!-- Close Button -->
+  <div class="flex justify-between items-center px-4 py-3 border-b border-gray-700">
+    <span class="text-lg font-bold uppercase">Menu</span>
+    <button id="closeMenu" class="text-white hover:text-red-500 transition-all duration-300 text-lg">
+      <i class="fa-solid fa-times"></i>
+    </button>
+  </div>
+
+  <!-- Navigation List -->
+  <ul class="text-[14px] font-medium uppercase mt-4 space-y-2">
+    <!-- Home -->
+    <li class="py-2 px-4 hover:bg-red-500 transition-all duration-300">
+      <a href="/" class="block">Home</a>
+    </li>
+    <!-- About -->
+    <li class="py-2 px-4 hover:bg-red-500 transition-all duration-300">
+      <a href="/about" class="block">About</a>
+    </li>
+
+    <!-- Catogies -->
+    <li class="py-2 px-4 hover:bg-red-500 transition-all duration-300">
+      <a href="/about" class="block">Catogories</a>
+    </li>
+
+     
+    
+    
+    <!-- Contact Us -->
+    <li class="py-2 px-4 hover:bg-red-500 transition-all duration-300">
+      <a href="/contact-us" class="block">Contact Us</a>
+    </li>
+    <!-- Add Post Button -->
+    <li class="py-2 px-4">
+      <a href="/create-post" class="block text-center bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-all duration-300">
+        Add Post
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- Create Post Button -->
+  <div class="hidden  items-center justify-center md:flex">
+    <a href="/create-post" class="inline-flex items-center bg-red-500 text-white px-5 py-1 rounded-lg shadow hover:bg-red-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+        Add Post
+    </a>
+  </div>
+  
+  </div>
+</div>
+<!-- Navigation Bar End -->
+
+    </nav>
+  </header>
+  

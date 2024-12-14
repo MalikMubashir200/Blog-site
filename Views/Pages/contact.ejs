@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DailyScroll</title>
+          <!-- links start here -->
+    <!-- Output Css Link -->
+    <link rel="stylesheet" href="/Style/output.css">
+     <!--Favicon link  -->
+    <link rel="shortcut icon" href="/Images/favicon-16x16.png" type="image/png">
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Google fonts link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- links ends here -->
+
+    <style>
+      body{
+        font-family: "Poppins", serif;
+      }
+    </style>
+</head >
+<body class="bg-[#ecf0f1]">
+    <%- include("../Partials/header") %>
+    <!-- Banner -->
+    <div class="bg-red-500 text-white flex flex-col items-center justify-center mt-5 w-[87%] h-[250px] mx-auto ">
+       <h2 class="text-[2.5rem]">Contact Us</h2>
+       <ul class="flex text-sm gap-5 mt-3 font-light">
+           <li>Home</li>
+           <li><i class="fa-solid fa-arrow-right"></i></li>
+           <li>Contact US</li>
+       </ul>
+    </div>
+
+    <div class="container  w-[87%] bg-white mx-auto mt-10 px-4 py-5">
+        <!-- Map Section -->
+        <div class="w-full h-72  overflow-hidden">
+            <iframe 
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509424!2d144.95373531531744!3d-37.8162792797519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577469fb6c68e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1611785689035!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    
+        <!-- Contact Info and Form Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 px-[50px]">
+            <!-- Column 1: Contact Details -->
+            <div class="space-y-6">
+              
+                <div>
+                    <p class="text-gray-600 font-light"><i class="fa-solid fa-house text-red-600 text-xl mr-2"></i> 123 Main Street, Cityville</p>
+                </div>
+                <div>
+                    <p class="text-gray-600 font-light"><i class="fas fa-envelope text-red-600 text-xl mr-2"></i> example@email.com</p>
+                </div>
+                <div>
+                    <p class="text-gray-600 font-light"><i class="fas fa-phone text-red-600 text-xl mr-2"></i> +123 456 7890</p>
+                </div>
+            </div>
+    
+            <!-- Column 2: Contact Form -->
+            <div>
+             
+                <form class="space-y-4">
+                    <input type="text" placeholder="Name" class="w-full border border-gray-300  p-3 focus:ring focus:ring-blue-200">
+                    <input type="email" placeholder="Email" class="w-full border border-gray-300 p-3 focus:ring focus:ring-blue-200">
+                    <input type="text" placeholder="Subject" class="w-full border border-gray-300  p-3 focus:ring focus:ring-blue-200">
+                    <button type="submit" class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-600">
+                        Submit
+                    </button>
+                </form>
+            </div>
+    
+            <!-- Column 3: Text Area -->
+            <div>
+                
+                <textarea 
+                    placeholder="Type your message here..." 
+                    rows="8" 
+                    class="w-full border border-gray-300  p-3 focus:ring focus:ring-blue-200"></textarea>
+            </div>
+        </div>
+    </div>
+    
+
+    <%- include("../Partials/footer") %>
+</body>
+</html>
